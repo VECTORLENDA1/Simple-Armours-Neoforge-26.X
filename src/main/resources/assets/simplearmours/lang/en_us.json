@@ -1,0 +1,13 @@
+{
+  "itemGroup.simplearmours": "Example Mod Tab",
+  "block.simplearmours.example_block": "Example Block",
+  "item.simplearmours.example_item": "Example Item",
+
+  "simplearmours.configuration.title": "Simple Armours Configs",
+  "simplearmours.configuration.section.simplearmours.common.toml": "Simple Armours Configs",
+  "simplearmours.configuration.section.simplearmours.common.toml.title": "Simple Armours Configs",
+  "simplearmours.configuration.items": "Item List",
+  "simplearmours.configuration.logDirtBlock": "Log Dirt Block",
+  "simplearmours.configuration.magicNumberIntroduction": "Magic Number Text",
+  "simplearmours.configuration.magicNumber": "Magic Number"
+}
