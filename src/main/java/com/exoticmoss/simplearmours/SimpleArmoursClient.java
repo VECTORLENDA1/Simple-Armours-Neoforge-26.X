@@ -1,5 +1,8 @@
 package com.exoticmoss.simplearmours;
 
+import com.exoticmoss.simplearmours.client.GravityCoreRenderer;
+import com.exoticmoss.simplearmours.entity.ModBlockEntities;
+
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -7,6 +10,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
@@ -27,5 +31,10 @@ public class SimpleArmoursClient {
         // Some client setup code
         SimpleArmours.LOGGER.info("HELLO FROM CLIENT SETUP");
         SimpleArmours.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+    }
+
+    @SubscribeEvent
+    static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerBlockEntityRenderer(ModBlockEntities.GRAVITY_CORE.get(), GravityCoreRenderer::new);
     }
 }

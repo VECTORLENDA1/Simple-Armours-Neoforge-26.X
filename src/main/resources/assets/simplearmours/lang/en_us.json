@@ -1,7 +1,5 @@
 {
-  "itemGroup.simplearmours": "Example Mod Tab",
-  "block.simplearmours.example_block": "Example Block",
-  "item.simplearmours.example_item": "Example Item",
+  "block.simplearmours.sun_core": "Sun Core",
 
   "simplearmours.configuration.title": "Simple Armours Configs",
   "simplearmours.configuration.section.simplearmours.common.toml": "Simple Armours Configs",
